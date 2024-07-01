@@ -72,7 +72,7 @@ population = st.sidebar.selectbox('Population', df['population'].unique())
 habitat = st.sidebar.selectbox('Habitat', df['habitat'].unique())
 
 # Main panel
-st.title("🍄 Mushroom Classification Web App")
+st.title("🍄 Mushroom Classification")
 st.markdown("""
 This app predicts random forest classification of mushrooms based on various characteristics.
 """)
@@ -98,9 +98,5 @@ if st.sidebar.button('Predict'):
     st.write(f"Probability of Poisonous: {probability[0][1]:.2f}")
 
 # Footer
-st.markdown("""
----
-App developed by [Your Name]
-""")
 st.image('https://thegraphicsfairy.com/wp-content/uploads/2023/09/Fall-Mushrooms-NV-GraphicsFairy.jpg', width=None)  # Masukkan URL gambar di sini
 
