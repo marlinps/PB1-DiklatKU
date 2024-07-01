@@ -72,9 +72,9 @@ population = st.sidebar.selectbox('Population', df['population'].unique())
 habitat = st.sidebar.selectbox('Habitat', df['habitat'].unique())
 
 # Main panel
-st.title("Mushroom Edibility Prediction App")
+st.title("🍄 Mushroom Classification Web App")
 st.markdown("""
-This app predicts the **edibility** of mushrooms based on various characteristics.
+This app predicts random forest classification of mushrooms based on various characteristics.
 """)
 
 # Predict button for user input
